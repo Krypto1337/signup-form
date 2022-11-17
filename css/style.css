@@ -1,0 +1,130 @@
+/* Basic styling*/
+:root {
+  font-family: monospace;
+}
+
+* {
+  color: rgb(185, 185, 185);
+  font-size: 2rem;
+  background-color: #000000;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Sidebar / Background-Image */
+
+.background-image {
+  background-image: url(../images/seattle.png);
+  width: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo {
+  display: flex;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 125px;
+  background: transparent;
+  height: 140px;
+}
+
+/* Main part*/
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 25px;
+}
+
+.caption {
+  display: flex;
+  font-size: 2.5rem;
+  flex-flow: row wrap;
+  width: 60vw;
+}
+
+p {
+  padding: 2px;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60vw;
+  gap: 5px;
+}
+
+.form-title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding-bottom: 25px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  opacity: 50%;
+  width: 25vw;
+}
+
+input {
+  background-color: rgb(2, 2, 2);
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 3px;
+  height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(#20d2f4);
+}
+
+button {
+  margin: 25px 0;
+  padding: 4px;
+  background-color: #0f5c11;
+  border: 1px;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #266c28;
+}
+
+.login {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
