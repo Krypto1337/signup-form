@@ -44,7 +44,13 @@
             </div>
             <div class="input">
               <label for="phone">phone number</label>
-              <input type="tel" name="phone" id="phone" />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]+"
+                oninvalid="this.setCustomValidity('Enter valid phone number (0-9)')"
+              />
             </div>
             <div class="input">
               <label for="Password">password</label>
