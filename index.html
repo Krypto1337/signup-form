@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
     <title>Sign up</title>
   </head>
   <body>
@@ -31,33 +32,41 @@
             <p class="form-title">Let's do this!</p>
             <div class="input">
               <label for="FirstName">first name</label>
-              <input type="text" name="FirstName" id="FirstName" />
+              <input type="text" name="FirstName" id="FirstName" required />
             </div>
             <div class="input">
               <label for="lastName">last name</label>
-              <input type="text" name="LastName" id="LastName" />
+              <input type="text" name="LastName" id="LastName" required />
             </div>
             <div class="input">
               <label for="Email">email</label>
-              <input type="email" name="Email" id="Email" />
+              <input type="email" name="Email" id="Email" required />
             </div>
             <div class="input">
-              <label for="PhoneNumber">phone number</label>
-              <input type="text" name="PhoneNumber" id="PhoneNumber" />
+              <label for="phone">phone number</label>
+              <input type="tel" name="phone" id="phone" />
             </div>
             <div class="input">
               <label for="Password">password</label>
-              <input type="password" name="Password" id="Password" />
+              <input
+                type="password"
+                name="Password"
+                id="Password"
+                class="error"
+                required
+              />
             </div>
             <div class="input">
               <label for="confirmPassword">confirm password</label>
               <input
                 type="password"
                 name="confirmPassword"
-                id="confirmPassword"
+                id="Password"
+                class="error"
+                required
               />
             </div>
-            <button type="submit">Create Account</button>
+            <button class="btn" type="submit">Create Account</button>
           </div>
         </form>
         <div class="login">Already have an account? <a href="#">Log In</a></div>
